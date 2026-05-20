@@ -1041,3 +1041,199 @@ em { color: var(--text-primary); font-style: italic; }
   .hero-cta .btn { justify-content: center; }
   .cta-band .btn-group { flex-direction: column; align-items: center; }
 }
+
+/* =====================================================
+   PRINT / PDF STYLES
+   Open resume.html in Chrome → Cmd+P → Save as PDF
+   ===================================================== */
+@media print {
+  /* Page setup */
+  @page {
+    size: letter;
+    margin: 0.6in 0.65in;
+  }
+
+  /* Reset colors for print */
+  :root {
+    --bg-primary: #ffffff;
+    --bg-secondary: #f8f8f8;
+    --bg-tertiary: #f0f0f0;
+    --text-primary: #111111;
+    --text-secondary: #333333;
+    --text-muted: #666666;
+    --accent: #0077aa;
+    --border: #dddddd;
+    --accent-dim: #eef6fb;
+    --accent-border: #99ccee;
+  }
+
+  body {
+    background: #fff;
+    color: #111;
+    font-size: 11pt;
+    line-height: 1.5;
+  }
+
+  /* Hide everything except the resume content */
+  .nav,
+  .mobile-nav,
+  .page-hero,
+  .cta-band,
+  #contact,
+  .footer,
+  .scroll-indicator,
+  .fade-up { /* remove animation class interference */
+    display: none !important;
+  }
+
+  /* Make fade-up items visible (animation won't run in print) */
+  .resume-section,
+  .resume-sidebar-section,
+  .experience-item {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Print header — name + contact */
+  .section-padding::before {
+    content: "ROY E. JOHNSON II";
+    display: block;
+    font-family: 'Space Grotesk', sans-serif;
+    font-size: 22pt;
+    font-weight: 700;
+    color: #111;
+    letter-spacing: -0.03em;
+    margin-bottom: 4pt;
+  }
+  .section-padding::after {
+    content: "RoyJohnson1976@gmail.com  ·  352.318.5932  ·  Caldwell, Idaho  ·  royjohnson.info";
+    display: block;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 8.5pt;
+    color: #0077aa;
+    margin-bottom: 18pt;
+    padding-bottom: 12pt;
+    border-bottom: 2px solid #0077aa;
+  }
+
+  /* Full width layout for print */
+  .section-padding {
+    padding: 0 !important;
+  }
+  .container {
+    max-width: 100% !important;
+    padding: 0 !important;
+  }
+  .resume-layout {
+    display: grid !important;
+    grid-template-columns: 2.2in 1fr !important;
+    gap: 0.3in !important;
+  }
+
+  /* Sidebar */
+  .resume-sidebar {
+    position: static !important;
+    gap: 14pt !important;
+  }
+  .resume-sidebar-section {
+    background: #f8f8f8 !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6pt !important;
+    padding: 12pt !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  .resume-sidebar-section h3 {
+    font-size: 7pt !important;
+    letter-spacing: 0.12em !important;
+    color: #0077aa !important;
+    margin-bottom: 8pt !important;
+  }
+
+  /* Education block */
+  .resume-sidebar-section div[style] {
+    font-size: 8.5pt !important;
+  }
+
+  /* Cert list */
+  .cert-list { gap: 8pt !important; }
+  .cert-item { font-size: 8.5pt !important; }
+  .cert-icon {
+    width: 22pt !important;
+    height: 22pt !important;
+    font-size: 6.5pt !important;
+    background: #eef6fb !important;
+    border-color: #99ccee !important;
+  }
+
+  /* Skills cloud — stacked for print */
+  .skills-cloud {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 4pt !important;
+    margin-top: 0 !important;
+  }
+  .skill-badge {
+    font-size: 7.5pt !important;
+    padding: 2pt 7pt !important;
+    background: #f0f0f0 !important;
+    border-color: #ccc !important;
+    color: #333 !important;
+    border-radius: 100pt !important;
+  }
+
+  /* Main resume sections */
+  .resume-main { gap: 14pt !important; }
+  .resume-section {
+    background: #fff !important;
+    border: 1px solid #ddd !important;
+    border-radius: 6pt !important;
+    padding: 14pt !important;
+    box-shadow: none !important;
+    break-inside: avoid;
+  }
+  .resume-section-title {
+    font-size: 8pt !important;
+    color: #555 !important;
+    border-bottom-color: #ddd !important;
+    margin-bottom: 10pt !important;
+    padding-bottom: 8pt !important;
+  }
+  .resume-section-title svg { display: none !important; }
+
+  /* Experience */
+  .experience-item {
+    margin-bottom: 14pt !important;
+    padding-bottom: 14pt !important;
+    border-bottom-color: #eee !important;
+    break-inside: avoid;
+  }
+  .exp-title { font-size: 10.5pt !important; }
+  .exp-date {
+    font-size: 7.5pt !important;
+    padding: 2pt 7pt !important;
+    background: #eef6fb !important;
+    border-color: #99ccee !important;
+    color: #0077aa !important;
+  }
+  .exp-company { font-size: 8.5pt !important; margin-bottom: 8pt !important; }
+  .exp-bullets li {
+    font-size: 8.5pt !important;
+    line-height: 1.45 !important;
+    gap: 6pt !important;
+  }
+  .exp-bullets li::before { color: #0077aa !important; }
+
+  /* Summary paragraph */
+  .resume-section p { font-size: 9pt !important; line-height: 1.6 !important; color: #333 !important; }
+
+  /* No box shadows, no transitions anywhere */
+  * {
+    box-shadow: none !important;
+    text-shadow: none !important;
+    transition: none !important;
+    animation: none !important;
+    -webkit-print-color-adjust: exact;
+    print-color-adjust: exact;
+  }
+}
