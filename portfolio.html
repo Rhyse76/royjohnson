@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio — Roy Johnson</title>
+  <meta name="description" content="Roy Johnson's project portfolio — IT automation, infrastructure, and DevOps work." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">RJ</div>
+        Roy Johnson
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li class="nav-cta"><a href="resume.html#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="resume.html#contact">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Portfolio</span>
+      </div>
+      <h1>My <span class="accent">Work</span></h1>
+      <p>Real solutions to real problems — automations, infrastructure builds, and integrations from the field.</p>
+    </div>
+  </section>
+
+  <!-- PORTFOLIO GRID -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="portfolio-grid">
+
+        <!-- Project 1 -->
+        <div class="project-card fade-up">
+          <div class="project-image">
+            <!-- To add a screenshot: <img src="images/project-ticket-routing.png" alt="Ticket Routing Automation" /> -->
+            <div class="project-image-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="16" y1="13" x2="8" y2="13"/>
+                <line x1="16" y1="17" x2="8" y2="17"/>
+              </svg>
+              <span>screenshot coming soon</span>
+            </div>
+            <span class="project-type-badge">Automation</span>
+          </div>
+          <div class="project-body">
+            <h3>Automated Helpdesk Ticket Routing</h3>
+            <p>PowerShell script integrated with the ticketing system API to auto-categorize and route incoming support tickets based on keyword analysis. Cut average ticket assignment time by 40% and eliminated misrouted tickets almost entirely.</p>
+            <div class="project-tags">
+              <span class="tag">PowerShell</span>
+              <span class="tag">REST API</span>
+              <span class="tag">ServiceNow</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/RoyJohnson" class="project-link" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+                View on GitHub
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card fade-up">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="3" width="20" height="14" rx="2" ry="2"/>
+                <line x1="8" y1="21" x2="16" y2="21"/>
+                <line x1="12" y1="17" x2="12" y2="21"/>
+              </svg>
+              <span>screenshot coming soon</span>
+            </div>
+            <span class="project-type-badge">Infrastructure</span>
+          </div>
+          <div class="project-body">
+            <h3>Warehouse Server Monitoring Dashboard</h3>
+            <p>Deployed a Grafana + Prometheus monitoring stack across DB Supply's warehouse network. Custom dashboards for server health, disk usage, and application uptime — real-time visibility and proactive alerts before issues become outages.</p>
+            <div class="project-tags">
+              <span class="tag">Grafana</span>
+              <span class="tag">Prometheus</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card fade-up">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <polyline points="16 3 21 3 21 8"/>
+                <line x1="4" y1="20" x2="21" y2="3"/>
+                <polyline points="21 16 21 21 16 21"/>
+                <line x1="15" y1="15" x2="21" y2="21"/>
+              </svg>
+              <span>screenshot coming soon</span>
+            </div>
+            <span class="project-type-badge">Cloud Migration</span>
+          </div>
+          <div class="project-body">
+            <h3>Microsoft 365 Email Migration</h3>
+            <p>Led the full migration of 150+ users from on-premises Exchange to Microsoft 365. Managed mailbox migrations, license assignments, and user training with zero data loss and minimal downtime. Implemented conditional access policies and MFA roll-out company-wide.</p>
+            <div class="project-tags">
+              <span class="tag">Microsoft 365</span>
+              <span class="tag">Exchange</span>
+              <span class="tag">Azure AD</span>
+              <span class="tag">PowerShell</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 4 -->
+        <div class="project-card fade-up">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <rect x="2" y="2" width="20" height="8" rx="2" ry="2"/>
+                <rect x="2" y="14" width="20" height="8" rx="2" ry="2"/>
+                <line x1="6" y1="6" x2="6.01" y2="6"/>
+                <line x1="6" y1="18" x2="6.01" y2="18"/>
+              </svg>
+              <span>screenshot coming soon</span>
+            </div>
+            <span class="project-type-badge">Networking</span>
+          </div>
+          <div class="project-body">
+            <h3>Warehouse Network VLAN Segmentation</h3>
+            <p>Redesigned the warehouse network from a flat topology to a properly segmented VLAN architecture. Separated corporate, warehouse ops, IoT devices, and guest traffic — dramatically improving security posture and reducing broadcast congestion across the floor.</p>
+            <div class="project-tags">
+              <span class="tag">VLANs</span>
+              <span class="tag">Cisco</span>
+              <span class="tag">Network Design</span>
+              <span class="tag">Security</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 5 -->
+        <div class="project-card fade-up">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <circle cx="12" cy="12" r="3"/>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M4.93 4.93a10 10 0 0 0 0 14.14"/>
+              </svg>
+              <span>screenshot coming soon</span>
+            </div>
+            <span class="project-type-badge">DevOps</span>
+          </div>
+          <div class="project-body">
+            <h3>Internal Tooling CI/CD Pipeline</h3>
+            <p>Implemented a full GitLab CI/CD pipeline for deploying internal IT tools. Automated build, test, and deployment stages with rollback capability. Cut deployment time from a manual 2-hour process to an automated 8-minute pipeline run.</p>
+            <div class="project-tags">
+              <span class="tag">GitLab CI</span>
+              <span class="tag">Docker</span>
+              <span class="tag">Bash</span>
+              <span class="tag">Linux</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 6 -->
+        <div class="project-card fade-up">
+          <div class="project-image">
+            <div class="project-image-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+                <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+              </svg>
+              <span>screenshot coming soon</span>
+            </div>
+            <span class="project-type-badge">Integration</span>
+          </div>
+          <div class="project-body">
+            <h3>WMS-to-Ticketing System Integration</h3>
+            <p>Built REST API connectors between the Warehouse Management System and the IT ticketing platform. When inventory discrepancies are flagged by the WMS, support tickets are automatically generated and routed — bridging the gap between warehouse ops and IT.</p>
+            <div class="project-tags">
+              <span class="tag">REST API</span>
+              <span class="tag">Python</span>
+              <span class="tag">WMS</span>
+              <span class="tag">Automation</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <div class="cta-band">
+    <div class="cta-band-inner">
+      <h2>Got a project in mind?</h2>
+      <p>Whether it's automating a headache, redesigning your infrastructure, or something in between — I'm interested.</p>
+      <div class="btn-group">
+        <a href="resume.html#contact" class="btn btn-primary">Let's Talk</a>
+        <a href="resume.html" class="btn btn-outline">View My Resume</a>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Roy <span class="accent">Johnson</span></div>
+      <div class="footer-copy">© 2026 · Built with purpose · royjohnson.info</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="resume.html">Resume</a>
+        <a href="resume.html#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

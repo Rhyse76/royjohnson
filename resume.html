@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Resume — Roy Johnson</title>
+  <meta name="description" content="Roy Johnson's professional resume — IT Support &amp; DevOps Engineer with 5+ years of experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <div class="nav-logo-icon">RJ</div>
+        Roy Johnson
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li class="nav-cta"><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div class="mobile-nav">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="portfolio.html">Portfolio</a>
+    <a href="resume.html">Resume</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <!-- PAGE HERO -->
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <div class="breadcrumb">
+        <a href="index.html">Home</a>
+        <span>/</span>
+        <span>Resume</span>
+      </div>
+      <h1>My <span class="accent">Resume</span></h1>
+      <p>A full breakdown of my experience, certifications, and technical skills.</p>
+      <div class="resume-actions">
+        <a href="resume.pdf" class="btn btn-primary" download>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="7 10 12 15 17 10"/>
+            <line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download PDF
+        </a>
+        <a href="#contact" class="btn btn-outline">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+            <polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME CONTENT -->
+  <section class="section-padding">
+    <div class="container">
+      <div class="resume-layout">
+
+        <!-- SIDEBAR -->
+        <aside class="resume-sidebar">
+
+          <div class="resume-sidebar-section fade-up">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li class="cert-item">
+                <div class="cert-icon">A+</div>
+                CompTIA A+
+              </li>
+              <li class="cert-item">
+                <div class="cert-icon">N+</div>
+                CompTIA Network+
+              </li>
+              <li class="cert-item">
+                <div class="cert-icon">MS</div>
+                Microsoft 365 Fundamentals
+              </li>
+              <li class="cert-item">
+                <div class="cert-icon">AZ</div>
+                AZ-900 Azure Fundamentals
+              </li>
+            </ul>
+          </div>
+
+          <div class="resume-sidebar-section fade-up">
+            <h3>Core Skills</h3>
+            <div class="skills-cloud">
+              <span class="skill-badge">Windows Server</span>
+              <span class="skill-badge">Active Directory</span>
+              <span class="skill-badge">Microsoft 365</span>
+              <span class="skill-badge">PowerShell</span>
+              <span class="skill-badge">Linux Admin</span>
+              <span class="skill-badge">Docker</span>
+              <span class="skill-badge">CI/CD Pipelines</span>
+              <span class="skill-badge">Networking</span>
+              <span class="skill-badge">VMware</span>
+              <span class="skill-badge">Grafana</span>
+              <span class="skill-badge">Ansible</span>
+              <span class="skill-badge">ServiceNow</span>
+            </div>
+          </div>
+
+          <div class="resume-sidebar-section fade-up">
+            <h3>Education</h3>
+            <div style="font-size: 0.88rem; color: var(--text-secondary); line-height: 1.6;">
+              <div style="font-weight: 600; color: var(--text-primary); margin-bottom: 4px;">IT &amp; Computer Science</div>
+              <div style="margin-bottom: 10px;">Continuing Education &amp; Self-Study</div>
+              <div style="font-size: 0.75rem; color: var(--text-muted); font-family: var(--font-mono);">Ongoing</div>
+            </div>
+          </div>
+
+          <div class="resume-sidebar-section fade-up">
+            <h3>Currently Learning</h3>
+            <ul class="cert-list">
+              <li class="cert-item">
+                <div class="cert-icon">K8</div>
+                Kubernetes (CKA prep)
+              </li>
+              <li class="cert-item">
+                <div class="cert-icon">TF</div>
+                Terraform / IaC
+              </li>
+              <li class="cert-item">
+                <div class="cert-icon">SC</div>
+                CompTIA Security+
+              </li>
+            </ul>
+          </div>
+
+        </aside>
+
+        <!-- MAIN CONTENT -->
+        <div class="resume-main">
+
+          <!-- Summary -->
+          <div class="resume-section fade-up">
+            <div class="resume-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="8" r="4"/>
+                <path d="M20 21a8 8 0 1 0-16 0"/>
+              </svg>
+              Professional Summary
+            </div>
+            <p style="font-size: 0.97rem; line-height: 1.78; color: var(--text-secondary);">
+              IT Support and DevOps hybrid professional with 5+ years of experience keeping
+              mission-critical systems running in fast-paced distribution and supply chain
+              environments. Skilled at bridging end-user support and infrastructure engineering —
+              comfortable troubleshooting a workstation one hour and automating a deployment
+              pipeline the next. Known for calm problem-solving, clear communication with both
+              technical and non-technical stakeholders, and building solutions that prevent the
+              same issue from ever recurring.
+            </p>
+          </div>
+
+          <!-- Experience -->
+          <div class="resume-section fade-up">
+            <div class="resume-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="2" y="7" width="20" height="14" rx="2" ry="2"/>
+                <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/>
+              </svg>
+              Work Experience
+            </div>
+
+            <div class="experience-item">
+              <div class="exp-header">
+                <div class="exp-title">IT Support Specialist &amp; DevOps Engineer</div>
+                <span class="exp-date">2020 – Present</span>
+              </div>
+              <div class="exp-company">DB Supply — Distribution &amp; Supply Chain</div>
+              <ul class="exp-bullets">
+                <li>Provide end-to-end IT support for 150+ employees across office and warehouse environments, maintaining sub-1-hour average resolution times on all Tier 1–2 tickets</li>
+                <li>Administer Windows Server, Active Directory, and Microsoft 365 tenant including Exchange Online, SharePoint, and Teams for the full organization</li>
+                <li>Developed PowerShell automation scripts that eliminated 60% of routine IT administrative tasks, saving 10+ hours of manual work per week</li>
+                <li>Led full migration of 150+ mailboxes from on-premises Exchange to Microsoft 365 with zero data loss and no unplanned business disruption</li>
+                <li>Designed and implemented VLAN network segmentation across warehouse facilities, separating corporate, ops, IoT, and guest traffic to improve security and performance</li>
+                <li>Built and maintained GitLab CI/CD pipelines for internal IT tooling deployments, cutting deploy time from a 2-hour manual process to an 8-minute automated run</li>
+                <li>Deployed Grafana/Prometheus monitoring stack across multiple sites, enabling proactive issue detection and reducing unplanned downtime by an estimated 80%</li>
+                <li>Integrated WMS and ITSM platforms via REST APIs to auto-generate support tickets from warehouse operational discrepancies</li>
+              </ul>
+            </div>
+
+            <div class="experience-item">
+              <div class="exp-header">
+                <div class="exp-title">IT Support Technician</div>
+                <span class="exp-date">2018 – 2020</span>
+              </div>
+              <div class="exp-company">[Previous Company] — Update with your employer</div>
+              <ul class="exp-bullets">
+                <li>Handled Tier 1 and Tier 2 helpdesk support including hardware troubleshooting, software installation, and network connectivity across multiple departments</li>
+                <li>Maintained hardware inventory and managed full device lifecycle from procurement through decommission</li>
+                <li>Assisted with Active Directory user management, group policy administration, and employee on/offboarding processes</li>
+                <li>Built and maintained a helpdesk knowledge base that reduced repeat ticket volume by 25% in the first six months</li>
+              </ul>
+            </div>
+
+          </div>
+
+          <!-- Key Achievements -->
+          <div class="resume-section fade-up">
+            <div class="resume-section-title">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+              </svg>
+              Key Achievements
+            </div>
+            <ul class="exp-bullets">
+              <li>Automated 60% of routine IT administrative tasks through PowerShell scripting, recovering 10+ hours of team capacity per week</li>
+              <li>Led Microsoft 365 migration for 150+ users with zero data loss and maintained full business operations throughout the cutover window</li>
+              <li>Reduced average helpdesk ticket resolution time from 3.5 hours to under 1 hour through improved routing, documentation, and automation</li>
+              <li>Implemented VLAN segmentation that eliminated cross-network security incidents and cut broadcast traffic by 70% on warehouse floors</li>
+              <li>Built monitoring infrastructure that enabled proactive issue detection, reducing unplanned downtime incidents by an estimated 80%</li>
+              <li>Delivered a WMS-to-ITSM integration that removed a previously manual 30-minute daily reconciliation process entirely</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section-padding" id="contact" style="background: var(--bg-secondary); border-top: 1px solid var(--border);">
+    <div class="container">
+      <span class="section-label">Get In Touch</span>
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-subtitle">I'm currently open to new opportunities. Whether you have a role in mind or just want to talk shop — my inbox is open.</p>
+      <div class="contact-grid">
+
+        <a href="mailto:rjohnson@dbsupply.com" class="contact-card fade-up">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+          </div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">rjohnson@dbsupply.com</div>
+        </a>
+
+        <a href="https://linkedin.com/in/royjohnson" class="contact-card fade-up" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/>
+              <rect x="2" y="9" width="4" height="12"/>
+              <circle cx="4" cy="4" r="2"/>
+            </svg>
+          </div>
+          <div class="contact-label">LinkedIn</div>
+          <div class="contact-value">linkedin.com/in/royjohnson</div>
+        </a>
+
+        <a href="https://github.com/RoyJohnson" class="contact-card fade-up" target="_blank" rel="noopener">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/>
+            </svg>
+          </div>
+          <div class="contact-label">GitHub</div>
+          <div class="contact-value">github.com/RoyJohnson</div>
+        </a>
+
+        <div class="contact-card fade-up" style="cursor: default; pointer-events: none;">
+          <div class="contact-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+          </div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">Remote &amp; On-site Available</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand">Roy <span class="accent">Johnson</span></div>
+      <div class="footer-copy">© 2026 · Built with purpose · royjohnson.info</div>
+      <div class="footer-links">
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
