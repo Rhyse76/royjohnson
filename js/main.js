@@ -60,8 +60,9 @@ if (typingEl) {
   const phrases = [
     'bridging the gap between helpdesk and DevOps.',
     'turning IT problems into automation wins.',
+    'building full stack apps with Laravel & Livewire.',
     'keeping systems running and teams unblocked.',
-    'your next IT & DevOps hybrid engineer.'
+    'your next IT, DevOps & web dev hybrid.'
   ];
   let phraseIdx = 0, charIdx = 0, deleting = false;
 
