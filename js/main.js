@@ -54,6 +54,34 @@ const fadeObserver = new IntersectionObserver((entries) => {
 
 document.querySelectorAll('.fade-up').forEach(el => fadeObserver.observe(el));
 
+// Image carousels
+document.querySelectorAll('.carousel').forEach(carousel => {
+  const slides = carousel.querySelectorAll('.carousel-slide');
+  const dots   = carousel.querySelectorAll('.carousel-dot');
+  if (slides.length < 2) return;
+
+  let current = 0;
+
+  function goTo(idx) {
+    slides[current].classList.remove('active');
+    dots[current].classList.remove('active');
+    current = (idx + slides.length) % slides.length;
+    slides[current].classList.add('active');
+    dots[current].classList.add('active');
+  }
+
+  carousel.querySelector('.prev')?.addEventListener('click', () => goTo(current - 1));
+  carousel.querySelector('.next')?.addEventListener('click', () => goTo(current + 1));
+  dots.forEach((dot, i) => dot.addEventListener('click', () => goTo(i)));
+
+  // Auto-advance every 4s when not hovered
+  let timer = setInterval(() => goTo(current + 1), 4000);
+  carousel.addEventListener('mouseenter', () => clearInterval(timer));
+  carousel.addEventListener('mouseleave', () => {
+    timer = setInterval(() => goTo(current + 1), 4000);
+  });
+});
+
 // Typing effect
 const typingEl = document.querySelector('.typing-text');
 if (typingEl) {
