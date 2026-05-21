@@ -1282,7 +1282,7 @@ em { color: var(--text-primary); font-style: italic; }
     margin-bottom: 4pt;
   }
   .section-padding::after {
-    content: "RoyJohnson1976@gmail.com  ·  352.318.5932  ·  Caldwell, Idaho  ·  royjohnson.info";
+    content: "Roy@RoyJohnson.info  ·  352.318.5932  ·  Caldwell, Idaho  ·  royjohnson.info";
     display: block;
     font-family: 'JetBrains Mono', monospace;
     font-size: 8.5pt;
