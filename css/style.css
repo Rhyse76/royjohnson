@@ -323,7 +323,7 @@ em { color: var(--text-primary); font-style: italic; }
   z-index: 1;
   max-width: var(--max-width);
   margin: 0 auto;
-  padding: 60px 24px 80px;
+  padding: 60px 24px 130px;
 }
 .hero-eyebrow {
   display: inline-flex;
