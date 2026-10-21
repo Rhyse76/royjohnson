@@ -25,3 +25,10 @@ hearthward.games and starrow.ai).
 2. Choose: keep GitHub Pages with Cloudflare for DNS only (smallest change), or serve the repo
    from a Cloudflare Worker with static assets, the way `Rhyse76/Hearthward` does. Ask the owner.
 3. Check the site, `resume.pdf`, www, HTTPS, and that email still arrives.
+
+## Later: make this repo private
+
+The owner wants this repo private eventually, but not yet. On GitHub's free plan a private repo
+can't serve GitHub Pages, so the site would go down. Make it private only after it's served by a
+Cloudflare Worker (option 2 above), or the owner has GitHub Pro. Workers Builds works with
+private repos (add the repo to the Cloudflare GitHub app's access, as was done for Hearthward).
